@@ -90,7 +90,6 @@ function getQuestion() {
         showSubmitBtn();
     }
 }
-
 function matchAnswer(selectedAnswer) {
     const correctAnswer = questions[currentIndex].correctAnswer;
     let points = 0;
@@ -121,7 +120,6 @@ function matchAnswer(selectedAnswer) {
     const nextButton = document.getElementById('next-question');
     nextButton.style.display = 'block';
 }
-
 function NextQuestionFn() {
     const nextButton = document.getElementById('next-question');
     nextButton.style.display = 'none';
@@ -144,8 +142,6 @@ function showSubmitBtn() {
     document.getElementById('next-question').style.display = 'none';   
     document.getElementById('submit-btn').style.display = 'block';
 }
-
-
 function winnerResult() {
     const resultDiv = document.querySelector('.result');
     const submitButton = document.getElementById('submit-btn');
@@ -182,7 +178,6 @@ function playAgain() {
     document.querySelector('.player-form').style.display = 'block';
     document.getElementById('player1').value = ''; 
     document.getElementById('player2').value = '';
-      // Hide category and question forms
       document.querySelector('.category-form').style.display = 'none';
       document.querySelector('.question-form').style.display = 'none';
 }

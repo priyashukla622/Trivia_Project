@@ -116,14 +116,14 @@ button {
     position: absolute;
     width: 130px;
     right:210px;
-    top:200px;
+    top:210px;
     font-size:18px;
 }
 #restart-btn{
     position: absolute;
     width: 130px;
     right:60px;
-    top:200px;
+    top:210px;
     font-size:18px;
 }
 #result-text {
