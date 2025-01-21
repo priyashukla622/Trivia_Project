@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Battle Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+    <h1>Trivia Battle Game</h1> 
+    </nav>
+    <div id="container">
+        <div class="player-form">
+            <h2>Enter Player Names</h2>
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" id="player1" name="player1" placeholder="Enter Player 1 Name" required>
+    
+            <label for="player2">Player 2 Name:</label>
+            <input type="text" id="player2" name="player2" placeholder="Enter Player 2 Name" required>
+    
+            <button id="start_butt" onclick="startGame()">Start Game</button> 
+
+        </div>
+        <div class="category-form" style="display: none;">
+            <h2>Category Form</h2>
+            <select id="category" name="category"></select>
+            <button id="select_butt" onclick="hideCategory()">Select Category</button>
+        </div>
+        <div class="question-form" style="display: none;">
+            <h2 id="question-text"></h2>
+            <div id="answers"></div>
+            <button id="next-question" onclick="NextQuestionFn()">Next Question</button>
+        </div>
+        <div class="result" style="display: none;">
+            <h2 id="result-text"></h2>
+        </div>
+        <button id="submit-btn" onclick="showSubmitBtn()" style="display: none;">Submit</button>
+        <button id="end-btn" onclick="EndGameFn()" style="display:none">End Game</button>
+        <button id="restart-btn" onclick="playAgain()" style="display:none">Play Again</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
